@@ -1,0 +1,1700 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revolut</title>  
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="" style="font-size:34px;font-weight:700; text-decoration: none; color: #000;">Revolut</a>
+    <nav >
+      <a href="#box1" >О программе</a>
+      <a href="#box2">Преимущества</a>
+      <a href="#box3">Отзывы</a>
+    </nav>
+  </header>
+
+
+  <div class="rev-hero">
+  <div class="rev-hero__wrap">
+    
+    <div class="rev-hero__col rev-hero__col--text">
+      <h1 class="rev-hero__title">
+        ЗАРАБАТЫВАЙТЕ<br>
+        НА РЫНКЕ ВМЕСТЕ<br>
+        С REVOLUT
+      </h1>
+
+      <p class="rev-hero__subtitle">
+        Торгуйте акциями, валютными парами, сырьевыми активами и криптовалютой, всё в единой безопасной экосистеме Revolut
+      </p>
+
+      <a href="#form" class="rev-hero__btn">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+
+      <p class="rev-hero__note">
+        *Только для резидентов Евросоюза или ВНЖ от 5 лет
+      </p>
+    </div>
+
+    <!-- ПРАВАЯ КОЛОНКА С ФОНОВОЙ КАРТИНКОЙ -->
+    <div class="rev-hero__col rev-hero__col--media"></div>
+  </div>
+</div>
+
+<style>
+  :root {
+  --rev-about-wrap: 1240px;
+  --rev-about-bg: #f3f4ff;      /* общий фон секции */
+  --rev-about-text: #111111;
+  --rev-about-muted: #222222;
+}
+
+.rev-about {
+  padding: 60px 16px;
+  
+}
+
+.rev-about__wrap {
+  max-width: var(--rev-about-wrap);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/*ЛЕВАЯ КОЛОНКА*/
+.rev-about__text {
+  flex: 0 1 55%;
+  color: var(--rev-about-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.rev-about__title {
+  margin: 0 0 28px;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.rev-about__text p {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--rev-about-muted);
+}
+
+.rev-about__accent {
+  font-weight: 700;
+}
+
+/*ПРАВАЯ КОЛОНКА – ФОН*/
+.rev-about__image {
+  flex: 0 1 40%;
+  min-height: 350px;
+  background-image: url("2.png"); /* ← сюда подставь свою картинку */
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+/* АДАПТИВ */
+@media (max-width: 960px) {
+  .rev-about__wrap {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .rev-about__image {
+    width: 100%;
+    min-height: 260px;
+    background-position: center;
+  }
+
+  .rev-about__title {
+    font-size: 32px;
+  }
+
+  .rev-about__text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .c-left{
+    width: 100%;
+  }
+
+  .rev-about {
+    padding: 40px 16px;
+  }
+
+  .rev-about__title {
+    font-size: 26px;
+  }
+}
+
+</style>
+
+<section class="rev-about">
+  <div class="rev-about__wrap">
+    <!-- ЛЕВАЯ КОЛОНКА: ТЕКСТ -->
+    <div class="rev-about__text">
+      <h2 class="rev-about__title" id="box1">О ПРОГРАММЕ</h2>
+
+      <p>
+        Инвестиционная программа Revolut создана для тех, кто хочет уверенно начать
+        работать на мировых рынках. В одном приложении вы получаете доступ к акциям,
+        валютным парам, сырьевым активам и криптовалютам, а также современным
+        инструментам анализа.
+      </p>
+
+      <p>
+        С самого старта вас сопровождает личный аналитик: объясняет принципы торговли,
+        помогает разобраться в стратегиях, отвечает на вопросы и ведёт от первых шагов
+        до самостоятельных решений. Всё обучение строится последовательно и без лишней
+        сложности.
+      </p>
+
+      <p class="rev-about__accent">
+        Revolut делает процесс инвестирования понятным и безопасным, а ваша задача —
+        просто двигаться вперёд, формируя свой первый капитал на основе знаний и
+        поддержки экспертов.
+      </p>
+    </div>
+
+    <!-- ПРАВАЯ КОЛОНКА: ФОНОВАЯ КАРТИНКА -->
+    <div class="rev-about__image"></div>
+  </div>
+</section>
+
+
+
+<style>
+  :root {
+  --rev-wrap: 1240px;
+  --rev-radius: 24px;
+  --rev-bg: #0b0b0f;
+  --rev-text-main: #fff;
+  --rev-text-muted: #a6a6b0;
+  --rev-btn-bg: #3b3bff;
+  --rev-btn-bg-hover: #5858ff;
+}
+
+.rev-hero {
+  padding: 32px 16px;
+}
+
+.rev-hero__wrap {
+  max-width: var(--rev-wrap);
+  margin: 0 auto;
+  background: var(--rev-bg);
+  border-radius: var(--rev-radius);
+  padding: 40px 40px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* ЛЕВАЯ КОЛОНКА */
+.rev-hero__col--text {
+  flex: 0 1 56%;
+}
+
+.rev-hero__title {
+  color: var(--rev-text-main);
+  margin: 0 0 24px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.rev-hero__subtitle {
+  max-width: 540px;
+  color: var(--rev-text-muted);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* КНОПКА */
+.rev-hero__btn {
+  display: inline-flex;
+  padding: 18px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--rev-btn-bg);
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  transition: .2s;
+}
+
+.rev-hero__btn:hover {
+  background: var(--rev-btn-bg-hover);
+}
+
+/* ПРИМЕЧАНИЕ */
+.rev-hero__note {
+  font-size: 12px;
+  margin-top: 16px;
+  color: var(--rev-text-muted);
+}
+
+/* ПРАВАЯ КОЛОНКА (ФОН КАРТИНКА) */
+.rev-hero__col--media {
+  flex: 0 1 70%;
+  min-height: 350px;
+  border-radius: var(--rev-radius);
+  background-image: url("1.svg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* АДАПТИВ */
+@media (max-width: 960px) {
+
+  .tilte2{
+    font-size: 28px;
+  }
+  .rev-hero__wrap {
+    flex-direction: column-reverse;
+    padding: 28px 20px;
+  }
+
+  .rev-hero__col--media {
+    width: 100%;
+    min-height: 260px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .rev-hero__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rev-hero__title {
+    font-size: 26px;
+  }
+
+  .rev-hero__btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.tilte2{
+  text-align: center;
+  font-size: 40px;
+}
+
+</style>
+
+
+
+  <div class="wrap">
+    <div class="container">
+      <h2 class="tilte2">РАСЧИТАЙТЕ, КАКУЮ ПРИБЫЛЬ МОЖНО ПОЛУЧИТЬ, ИНВЕСТИРУЯ С REVOLUTE</h2>
+
+
+      <div class="c-wrap">
+  <div class="c-main">
+
+    <div class="c-left">
+
+      <!-- Инвестиции -->
+      <div class="c-row">
+        <div class="c-label-card">
+          <div>
+            <div class="c-label-top">Ваша инвестиция</div>
+            <div class="c-label-value" id="investLabel">250 €</div>
+          </div>
+        </div>
+
+        <div class="c-slider-area">
+          <div class="c-slider-max">500 000 €</div>
+          <input type="range" id="investRange" class="c-slider"
+            min="250" max="500000" step="250" value="250">
+        </div>
+      </div>
+
+      <!-- Период -->
+      <div class="c-row">
+        <div class="c-label-card">
+          <div>
+            <div class="c-label-top">Период пользования</div>
+            <div class="c-label-value" id="daysLabel">10 дней</div>
+          </div>
+        </div>
+
+        <div class="c-slider-area">
+          <div class="c-slider-max">100 дней</div>
+          <input type="range" id="daysRange" class="c-slider"
+            min="10" max="100" step="1" value="10">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Результат -->
+    <div class="c-result">
+      <div>
+        <div class="c-result-label">Возможный доход:</div>
+        <div class="c-result-value" id="resultValue"><span>€</span>1,821</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <section class="rev-adv">
+  <div class="rev-adv__wrap">
+
+    <h2 class="rev-adv__title" id="box2">ПРЕИМУЩЕСТВА</h2>
+
+    <div class="rev-adv__grid">
+
+      <article class="rev-adv__item">
+        <div class="rev-adv__head">
+          <span class="rev-adv__num">1.</span>
+          <h3 class="rev-adv__subtitle">Доступ к мировым рынкам</h3>
+        </div>
+        <p class="rev-adv__text">
+          Торгуйте активами со всего мира из одного приложения.
+        </p>
+      </article>
+
+      <article class="rev-adv__item">
+        <div class="rev-adv__head">
+          <span class="rev-adv__num">2.</span>
+          <h3 class="rev-adv__subtitle">Надёжность и безопасность</h3>
+        </div>
+        <p class="rev-adv__text">
+          Современные протоколы защиты данных и стабильная инфраструктура.
+        </p>
+      </article>
+
+      <article class="rev-adv__item">
+        <div class="rev-adv__head">
+          <span class="rev-adv__num">3.</span>
+          <h3 class="rev-adv__subtitle">Профессиональные инструменты</h3>
+        </div>
+        <p class="rev-adv__text">
+          Графики, индикаторы, новости и отчёты — всё, что нужно для взвешенных решений.
+        </p>
+      </article>
+
+      <article class="rev-adv__item rev-adv__item--wide">
+        <div class="rev-adv__head">
+          <span class="rev-adv__num">4.</span>
+          <h3 class="rev-adv__subtitle">
+            Личный аналитик и индивидуальное обучение
+          </h3>
+        </div>
+        <p class="rev-adv__text">
+          Вы не остаётесь один на один с рынком — вас сопровождают на каждом шаге.
+        </p>
+      </article>
+
+      <article class="rev-adv__item rev-adv__item--wide">
+        <div class="rev-adv__head">
+          <span class="rev-adv__num">5.</span>
+          <h3 class="rev-adv__subtitle">Быстрый старт для новичков</h3>
+        </div>
+        <p class="rev-adv__text">
+          Простая регистрация, удобный интерфейс и обучение, которое помогает начать без страха и путаницы.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+  --rev-adv-wrap: 1240px;
+  --rev-adv-bg: #05050a;
+  --rev-adv-card-bg: #f3f3ff;
+  --rev-adv-title: #ffffff;
+  --rev-adv-text: #0d1025;
+  --rev-adv-accent: #11174b;
+}
+
+.rev-adv {
+  padding: 60px 16px 70px;
+  background: var(--rev-adv-bg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.rev-adv__wrap {
+  max-width: var(--rev-adv-wrap);
+  margin: 0 auto;
+}
+
+.rev-adv__title {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rev-adv-title);
+}
+
+.rev-adv__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Карточка */
+.rev-adv__item {
+  background: var(--rev-adv-card-bg);
+  border-radius: 18px;
+  padding: 24px 26px 26px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+.rev-adv__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rev-adv__num {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--rev-adv-accent);
+  line-height: 1;
+}
+
+.rev-adv__subtitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--rev-adv-accent);
+}
+
+.rev-adv__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--rev-adv-text);
+}
+
+/* нижний ряд – широкие карточки */
+.rev-adv__item--wide:nth-of-type(4) {
+  grid-column: 1 / span 2;
+}
+
+.rev-adv__item--wide:nth-of-type(5) {
+  grid-column: 3 / span 1;
+}
+
+/* АДАПТИВ */
+@media (max-width: 992px) {
+  .rev-adv__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rev-adv__item--wide {
+    grid-column: auto / span 2;
+  }
+
+  .rev-adv__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rev-adv__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rev-adv__item,
+  .rev-adv__item--wide {
+    grid-column: auto / span 1;
+  }
+
+  .rev-adv__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 800px) {
+  .control-card{
+    display: block !important;
+  }
+  .rev-adv__grid{
+    display: block;
+  }
+  .rev-adv__item{
+    margin: 15px 0;
+  }
+}
+
+</style>
+
+
+      
+    </div>
+
+
+  </div>
+
+
+  <section class="rv-section">
+  <div class="rv-container">
+    <h2 class="rv-title" id="box3">ОТЗЫВЫ НАШИХ ПОЛЬЗОВАТЕЛЕЙ</h2>
+
+    <div class="rv-slider">
+      <button class="rv-nav rv-nav--prev" type="button" aria-label="Предыдущий отзыв">
+        <span class="rv-nav-icon"></span>
+      </button>
+
+      <div class="rv-window">
+        <div class="rv-track">
+          <!-- Слайд 1 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="55.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Игорь, 41 год</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              Нравится, что всё прозрачно: обучение, анализ, риски. Никаких “золотых гор”, 
+              только реальные инструменты и грамотные советы.
+            </p>
+          </article>
+
+          <!-- Слайд 2 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="66.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Мария, 32 года</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              Думала, что инвестиции — это сложно. Но аналитик буквально взял меня за руку. 
+              Теперь понимаю рынок и уверенно совершаю свои первые сделки.
+            </p>
+          </article>
+
+          <!-- Слайд 3 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="44.png" alt="">  
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Александр, 35 лет</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              Понравилось, что аналитик не давал готовые решения, а учил разбираться самому. 
+              Теперь понимаю, как читать графики и что влияет на движение цен.
+            </p>
+          </article>
+
+          <!-- Слайд 4 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="55.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Игорь, 41 год</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              «Нравится, что всё прозрачно: обучение, анализ, риски. Никаких “золотых гор”, только реальные инструменты и грамотные советы.»
+            </p>
+          </article>
+
+          <!-- Слайд 5 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="44.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Александр, 35 лет</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              «Понравилось, что аналитик не давал готовые решения, а учил разбираться самому. Теперь понимаю, как читать графики и что влияет на движение цены. Хороший старт для тех, кто хочет торговать осознанно.»
+            </p>
+          </article>
+
+          <!-- Слайд 6 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="33.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Диана, 29 лет</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              «Я всегда боялась инвестиций, но в Revolut всё очень понятно. Поддержка экспертa помогает не переживать и не делать лишних ошибок. Уже собрала свой  портфель и продолжаю учиться.»
+            </p>
+          </article>
+
+          <!-- Слайд 7 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="22.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Роман, 44 года</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              «Удобная платформа, быстрый доступ ко всем нужным инструментам. Особенно ценю индивидуальные разборы сделок — это действительно помогает расти.»
+            </p>
+          </article>
+
+          <!-- Слайд 8 -->
+          <article class="rv-card">
+            <div class="rv-card-top">
+              <div class="rv-avatar">
+                <img src="11.png" alt="">
+              </div>
+              <div class="rv-person">
+                <div class="rv-name">Елена, 27 лет</div>
+                <div class="rv-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+            <p class="rv-text">
+              «Очень удобная платформа. Быстро разобралась, получила уверенность и сформировала свой первый портфель. Спасибо за поддержку!»
+            </p>
+          </article>
+
+
+
+          <!-- можно добавить ещё карточки по тому же шаблону -->
+        </div>
+      </div>
+
+      <button class="rv-nav rv-nav--next" type="button" aria-label="Следующий отзыв">
+        <span class="rv-nav-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+  :root {
+  --rv-bg: #f3f3fa;
+  --rv-card-bg: #121213;
+  --rv-text-main: #ffffff;
+  --rv-text-muted: #b3b3b3;
+  --rv-accent: #ffcc33;
+  --rv-radius-card: 24px;
+  --rv-container-width: 1180px;
+  --rv-gap: 24px;
+}
+
+.rv-section .center{
+  /* transform: scale(1.02); */
+  opacity: 1;
+}
+
+.rv-card{
+  opacity: .85;
+}
+
+.rv-section {
+  padding: 60px 16px 80px;
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+.rv-container {
+  max-width: var(--rv-container-width);
+  margin: 0 auto;
+}
+
+.rv-title {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.rv-slider {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.rv-window {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.rv-track {
+  display: flex;
+  gap: var(--rv-gap);
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.rv-card {
+  flex: 0 0 340px;
+  background: var(--rv-card-bg);
+  color: var(--rv-text-main);
+  border-radius: var(--rv-radius-card);
+  padding: 24px 26px 26px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4);
+}
+
+.rv-card-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.rv-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #ffffff 0, #f7c4a2 30%, #c18660 60%, #222 100%);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Под свою фотку:
+.rv-avatar {
+  background: none;
+  background-image: url("img/maria.jpg");
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+.rv-person {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rv-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.rv-stars {
+  font-size: 18px;
+  color: var(--rv-accent);
+  letter-spacing: 2px;
+}
+
+.rv-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--rv-text-muted);
+}
+
+/* Кнопки навигации */
+
+.rv-nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rv-nav:hover {
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.rv-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Стрелка */
+.rv-nav-icon {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+}
+
+.rv-nav--prev .rv-nav-icon {
+  transform: rotate(-135deg);
+}
+
+.rv-nav--next .rv-nav-icon {
+  transform: rotate(45deg);
+}
+
+/* Адаптив */
+
+@media (max-width: 1024px) {
+  .rv-card {
+    flex: 0 0 300px;
+  }
+
+  .rv-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rv-slider {
+    gap: 12px;
+  }
+
+  .rv-card {
+    flex: 0 0 80%;
+    max-width: 420px;
+  }
+
+  .rv-section {
+    padding: 40px 12px 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .rv-card {
+    flex: 0 0 100%;
+  }
+
+  .rv-nav {
+    width: 34px;
+    height: 34px;
+  }
+
+  .rv-title {
+    font-size: 22px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+</style>
+
+<section class="regx-hero">
+  
+  <div class="regx-visual">
+    <!-- Фон вставляется через CSS -->
+  </div>
+
+  <div class="regx-form-box">
+    <h1 class="regx-title">
+      <span>ЗАРЕГИСТРИРУЙТЕСЬ</span>
+      <span>БЕСПЛАТНО!</span>
+    </h1>
+
+    <form class="regx-form">
+      <input class="regx-input" type="text" placeholder="Ваше Имя и Фамилия">
+      <input class="regx-input" type="number" placeholder="Ваш Возраст">
+      <input class="regx-input" type="email" placeholder="Email">
+      <input class="regx-input" type="tel" placeholder="Номер телефона">
+
+      <label class="regx-checkbox">
+        <input type="checkbox">
+        <span>Регистрируясь, я соглашаюсь с Политикой конфиденциальности.</span>
+      </label>
+
+      <button class="regx-btn" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+    </form>
+  </div>
+
+</section>
+
+
+<style>
+
+
+:root {
+  --regx-wrap: 1200px;
+  --regx-bg-page: #e9ecf7;
+  --regx-bg-inner: #050509;
+  --regx-color-text: #ffffff;
+  --regx-color-accent: #3c6dff;
+  --regx-input-bg: #ffffff;
+  --regx-input-text: #222;
+  --regx-radius-big: 32px;
+  --regx-radius-mid: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.regx-hero {
+  max-width: var(--regx-wrap);
+  margin: 0 auto 50px auto;
+  background: var(--regx-bg-inner);
+  border-radius: var(--regx-radius-big);
+  padding: 40px 40px 5px 40px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Левый блок */
+.regx-visual {
+  flex: 1;
+  border-radius: 28px;
+  min-height: 350px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("7.svg");
+}
+
+.regx-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 60%);
+  pointer-events: none;
+}
+
+/* Правая колонка */
+.regx-form-box {
+  width: 420px;
+  background: #080810;
+  border-radius: var(--regx-radius-big);
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.65);
+}
+
+.regx-title {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.regx-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.regx-input {
+  padding: 14px 16px;
+  border-radius: var(--regx-radius-mid);
+  border: none;
+  background: var(--regx-input-bg);
+  color: var(--regx-input-text);
+  font-size: 14px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.05),
+    0 8px 18px rgba(0,0,0,0.35);
+}
+
+.regx-input::placeholder {
+  color: #777b88;
+}
+
+.regx-checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #b4b7c5;
+}
+
+.regx-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--regx-color-accent);
+}
+
+/* Кнопка */
+.regx-btn {
+  margin-top: 12px;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  border-radius: var(--regx-radius-mid);
+  background: linear-gradient(90deg, #3151ff, #6c83ff);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.65);
+  transition: 0.15s ease;
+}
+
+.regx-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.regx-btn:active {
+  transform: translateY(0);
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .regx-hero {
+    flex-direction: column;
+  }
+  .regx-form-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .regx-hero {
+    padding: 20px;
+  }
+  .regx-title {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+  :root {
+  --radius: 38px;
+  --bg-dark: #060607;
+  --input-bg: #f4f4f7;
+  --blue1: #1e39ff;
+  --blue2: #3a5cff;
+}
+
+/* Чтобы ничего не раздувало ширину */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* СЕКЦИЯ */
+.reg-block {
+  padding: 40px 16px 60px;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Внутренний контейнер блока */
+.reg-inner {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background: var(--bg-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Левая часть (картинка) */
+.reg-left {
+  flex: 1 1 50%;
+  background: #000;
+  position: relative;
+  min-height: 420px;
+}
+
+/* Картинка */
+.reg-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Правая часть (форма) */
+.reg-right {
+  flex: 0 0 45%;
+  padding: 62px 56px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  letter-spacing: 0.3px;
+}
+
+/* Форма */
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reg-form input {
+  width: 100%;
+  height: 54px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0 18px;
+  background: var(--input-bg);
+  font-size: 15px;
+  color: #333;
+}
+
+.reg-form input::placeholder {
+  color: #9d9da5;
+}
+
+/* Чекбокс */
+.reg-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+  cursor: pointer;
+  color: #d3d3d7;
+}
+
+.reg-check input {
+  position: absolute;
+  opacity: 0;
+}
+
+.reg-check .check {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 2px solid var(--blue1);
+  margin-top: 3px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.reg-check input:checked + .check {
+  background: var(--blue1);
+}
+
+.reg-check input:checked + .check::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* КНОПКА */
+.reg-btn {
+  width: 100%;
+  height: 64px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, var(--blue1), var(--blue2));
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin-top: 4px;
+  box-shadow: 0 20px 40px rgba(40, 60, 255, 0.35);
+  transition: 0.15s ease;
+}
+
+.reg-btn:hover {
+  transform: translateY(-1px);
+}
+
+.reg-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(40, 60, 255, 0.3);
+}
+
+/* Адаптив */
+@media (max-width: 960px) {
+  .reg-inner {
+    flex-direction: column;
+  }
+
+  .reg-right {
+    padding: 42px 26px 50px;
+  }
+
+  .reg-title {
+    font-size: 26px;
+  }
+
+  .reg-left {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 520px) {
+  .reg-title {
+    font-size: 22px;
+  }
+
+  .reg-btn {
+    height: 58px;
+    font-size: 16px;
+  }
+
+  .reg-form input {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+</style>
+
+
+
+<script>
+(function () {
+  const slider = document.querySelector('.rv-slider');
+  if (!slider) return;
+
+  const track = slider.querySelector('.rv-track');
+  const windowEl = slider.querySelector('.rv-window');
+  const slides = Array.from(track.children);
+  const prevBtn = slider.querySelector('.rv-nav--prev');
+  const nextBtn = slider.querySelector('.rv-nav--next');
+
+  let currentIndex = 0;
+  let step = 0;
+  let maxIndex = 0;
+
+  function calcStep() {
+    if (!slides.length) return 0;
+    const slide = slides[0];
+    const gap = parseFloat(getComputedStyle(track).gap || 0);
+    step = slide.offsetWidth + gap;
+
+    const visible = Math.max(1, Math.round(windowEl.offsetWidth / step));
+    maxIndex = Math.max(0, slides.length - visible);
+  }
+
+  function updateButtons() {
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex >= maxIndex;
+  }
+
+  /* ---------- ставим класс .center ---------- */
+  function setCenterClass() {
+    slides.forEach(s => s.classList.remove('center'));
+
+    // центральный слайд = индекс текущий + количество видимых/2
+    const visible = Math.max(1, Math.round(windowEl.offsetWidth / step));
+    const centerOffset = Math.floor(visible / 2);
+
+    let centerIndex = currentIndex + centerOffset;
+
+    if (centerIndex > slides.length - 1) centerIndex = slides.length - 1;
+
+    slides[centerIndex].classList.add('center');
+  }
+  /* ------------------------------------------- */
+
+  function goTo(index) {
+    currentIndex = Math.min(Math.max(index, 0), maxIndex);
+    const offset = -currentIndex * step;
+    track.style.transform = 'translateX(' + offset + 'px)';
+    updateButtons();
+    setCenterClass();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+  nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+  window.addEventListener('resize', () => {
+    const oldStep = step;
+    calcStep();
+    if (step !== oldStep) goTo(currentIndex);
+  });
+
+  // init
+  calcStep();
+  goTo(0);
+
+})();
+</script>
+
+
+
+<style>
+:root {
+  --c-bg: #111214;
+  --c-panel-inner: #020016;
+  --c-result-bg: #020016;
+  --c-border: rgba(195,198,255,0.9);
+  --c-text-main: #ffffff;
+  --c-text-muted: #b7b9c9;
+  --c-accent: #2a2cff;
+  --c-track: #151515; /* ТОЧНЫЙ ЦВЕТ ТРЕКА из картинки */
+  --c-wrap: 1240px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  /* background: #000; */
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--c-text-main);
+}
+
+.c-wrap {
+  max-width: var(--c-wrap);
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.c-main {
+  background: var(--c-bg);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Левая колонка */
+.c-left {
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.c-row {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+/* Карточка слева */
+.c-label-card {
+  width: 230px;
+  min-height: 96px;
+  border-radius: 16px;
+  background: radial-gradient(circle at top, #060629 0%, var(--c-panel-inner) 60%, #020012 100%);
+  border: 1px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-label-top {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.c-label-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Слайдер + дорожка */
+.c-slider-area {
+  flex: 1;
+  position: relative;
+}
+
+.c-slider-max {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+
+/* --- ТОЧНАЯ ДОРОЖКА (#151515) --- */
+.c-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;                     /* толщина как в дизайне */
+  border-radius: 999px;
+  background: var(--c-track);       /* дорожка тон-в-тон */
+  outline: none;
+  margin-top: 12px;
+}
+
+/* бегунок */
+.c-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  border: 4px solid #ffffff;
+  cursor: pointer;
+  margin-top: -7px;
+  box-shadow: 0 0 0 4px rgba(42,44,255,0.35); /* синее свечение */
+}
+
+.c-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  border: 4px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px rgba(42,44,255,0.35);
+}
+
+.c-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--c-track);
+}
+
+/* Правая часть — результат */
+.c-result {
+  flex: 1;
+  border-radius: 28px;
+  background: var(--c-result-bg);
+  border: 1px solid var(--c-border);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-result-label {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.c-result-value {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.c-result-value span {
+  margin-right: 4px;
+}
+
+/* Адаптив */
+@media (max-width: 960px) {
+  .c-main {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .c-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .c-label-card {
+    width: 100%;
+  }
+}
+</style>
+
+<style>
+    *{box-sizing:border-box}
+    html{
+      padding: 0;
+      margin: 0;
+    }
+
+    body{
+      height:100%;
+      width: 100%;
+      margin:0;
+      padding: 0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#fff;
+      background: #f5f5ff;
+      overflow-x: hidden;
+      
+      
+    }
+
+    .wrap{
+      display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(180deg,#070707 0%, #0b0b0b 100%);
+      max-width: 1240px;
+      margin: 0 auto;
+      border-radius: 30px;
+    }
+    .container{max-width:1100px;width:100%}
+
+    h1{
+      font-size:40px;line-height:1.02;font-weight:800;margin:0 0 40px;letter-spacing:1px}
+
+    .grid{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center}
+
+    /* Left column (controls) */
+    .controls{display:flex;flex-direction:column;gap:28px}
+    .control-card{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:18px;border-radius:12px;display:flex;gap:18px;align-items:center}
+    .side-label{min-width:140px;background:rgba(10,8,25,0.9);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+    .side-label .small{display:block;color:var(--muted);font-size:13px}
+    .side-label .big{font-size:20px;font-weight:700;margin-top:6px}
+
+    .slider-wrap{flex:1}
+    .slider-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .slider-top .value{font-weight:700}
+    .track{height:6px;background:rgba(255,255,255,0.06);border-radius:6px;position:relative}
+
+    input[type=range]{-webkit-appearance:none;width:100%;background:#fff;position:relative;margin:6px 0}
+    input[type=range]::-webkit-slider-runnable-track{height:6px;background:#fff;}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid #2b2b7a;margin-top:-6px;box-shadow:0 0 0 6px rgba(43,43,122,0.12)}
+
+    .note-right{font-size:13px;color:var(--muted);text-align:right;margin-top:6px}
+
+    /* Right column (result) */
+    .result-card{background:linear-gradient(180deg, #060519 0%, #0b0820 100%);border-radius:16px;padding:36px;border:1px solid rgba(255,255,255,0.04);display:flex;flex-direction:column;align-items:center}
+    .result-card .label{color:var(--muted);font-size:18px;margin-bottom:12px}
+    .result-card .amount{font-size:56px;font-weight:800}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr;}
+      .result-card{order: -1;margin-bottom:8px}
+
+      header{
+        display: block !important;
+      }
+
+      header nav{
+        display: block !important;
+      }
+    }
+
+    /* helper */
+    .muted{color:var(--muted)}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:24px 60px;background:#f5f5ff;font-size:20px;font-weight:500;
+    }
+    header nav{
+      display:flex;gap:60px;
+    }
+
+    header nav a{
+      color:#000;text-decoration:none;
+
+    }
+  </style>
+
+<script>
+(function () {
+  const investRange = document.getElementById('investRange');
+  const daysRange = document.getElementById('daysRange');
+  const investLabel = document.getElementById('investLabel');
+  const daysLabel = document.getElementById('daysLabel');
+  const resultValue = document.getElementById('resultValue');
+
+  /* Коэффициент под реальный пример 250€ → 10 дней → €1,821 */
+  const K = 0.7284;
+
+  function fmt(n) {
+    return Math.round(n).toLocaleString('ru-RU');
+  }
+
+  function update() {
+    const invest = Number(investRange.value);
+    const days = Number(daysRange.value);
+
+    investLabel.textContent = fmt(invest) + " €";
+    daysLabel.textContent = days + " дней";
+
+    const income = invest * days * K;
+    resultValue.innerHTML = "<span>€</span>" + fmt(income);
+  }
+
+  investRange.addEventListener("input", update);
+  daysRange.addEventListener("input", update);
+
+  update();
+})();
+</script>
+
+</body>
+</html>
